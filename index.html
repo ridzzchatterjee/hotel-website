@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hotel-Website</title>
+    <link rel="stylesheet" href="./styles/normalize.css" />
+    <link rel="stylesheet" href="./styles/fonts.css" />
+    <link rel="stylesheet" href="./styles/style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="navlink-header">
+        <a href="#logo" class="navlinks"> <span class="text-with-icon"><ion-icon name="bed-outline"></ion-icon>Oyo</span></a>
+        <a href="#rooms" class="navlinks">Rooms</a>
+        <a href="#about" class="navlinks">About</a>
+        <a href="#contact" class="navlinks">Contact</a>
+      </div>
+      <div>
+        <a href="#contact" class="navlinks" class="book-class">Book Now</a>
+      </div>
+    </header>
+
+    <section id="logo" class="quick-room-search">
+      <div class="hotel-search">
+        <div class="search-heading">
+          <span class="text-with-icon"><ion-icon name="bed-outline"></ion-icon>
+            Hotel Name</span>
+        </div>
+        <form class="hotel-booking-form">
+          <div class="search-criteria-group">
+            <div class="search-criteria">
+              <label for="check-in"><span class="text-with-icon"><ion-icon name="calendar-number-outline"></ion-icon>Check In</span></label>
+              <div>
+                <input type="date" name="check-in" placeholder="DD MM YYYY" />
+              </div>
+            </div>
+            <div class="search-criteria">
+              <label for="check-out"><span class="text-with-icon"><ion-icon name="calendar-number-outline"></ion-icon>Check Out</span></label>
+              <div>
+                <input type="date" name="check-out" placeholder="DD MM YYYY" />
+              </div>
+            </div>
+          </div>
+          <div class="search-criteria-group">
+            <div class="search-criteria">
+              <label for="adults"><span class="text-with-icon"><ion-icon name="man-outline"></ion-icon>Adults</span></label>
+              <input type="number" name="adults" value="1" min="1" max="6" />
+            </div>
+            <div class="search-criteria">
+              <label for="kids"><span class="text-with-icon"><ion-icon name="accessibility-outline"></ion-icon>Kids</span></label>
+              <input type="number" name="kids" value="0" min="0" max="6" />
+            </div>
+          </div>
+          <div class="search-criteria-group">
+            <button id="submit" type="submit">Search availability</button>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <section id="rooms">
+      <div class="section-heading">Rooms</div>
+      <p class="room-search-text">
+        Make yourself at home is our slogan. We offer the best beds in the
+        industry. Sleep well and rest well.
+      </p>
+      <form class="room-search-form">
+        <div class="search-criteria wide">
+          <label for="check-in"><span class="text-with-icon"><ion-icon name="calendar-number-outline"></ion-icon>Check In</span></label>
+          <input type="date" name="check-in" placeholder="DD MM YYYY" />
+        </div>
+        <div class="search-criteria wide">
+          <label for="check-out"><span class="text-with-icon"><ion-icon name="calendar-number-outline"></ion-icon>Check Out</span></label>
+          <input type="date" name="check-out" placeholder="DD MM YYYY" />
+        </div>
+        <div class="search-criteria">
+          <label for="adults"><span class="text-with-icon"><ion-icon name="man-outline"></ion-icon>Adults</span></label>
+          <input type="number" name="adults" value="1" min="1" max="6" />
+        </div>
+        <div class="search-criteria">
+          <label for="kids"><span class="text-with-icon"><ion-icon name="man-outline"></ion-icon>Kids</span></label>
+          <input type="number" name="kids" value="0" min="0" max="6" />
+        </div>
+        <div class="search-criteria">
+          <label><span class="text-with-icon"><ion-icon name="search-outline"></ion-icon>Search</span></label>
+          <button class="search-room" type="button">Search</button>
+        </div>
+      </form>
+      <div class="room-types">
+        <div class="room-type single-room">
+          <div class="room-image"></div>
+          <p class="room-name">Single Room</p>
+          <p class="room-price">From $99</p>
+          <p>Single bed</p>
+          <p>15m<sup>2</sup></p>
+          <p class="text-with-icon">
+            <span ><ion-icon name="water-outline"></ion-icon>
+            <ion-icon name="call-outline"></ion-icon>
+            <ion-icon name="wifi-outline"></ion-icon>
+          </span>
+          </p>
+          <p>
+            <button class="choose-room" type="button">Choose Room</button>
+          </p>
+        </div>
+
+        <div class="room-type double-room">
+          <div class="room-image"></div>
+          <p class="room-name">Double Room</p>
+          <p class="room-price">From $149</p>
+          <p>Queen-size bed</p>
+          <p>25m<sup>2</sup></p>
+          <p class="text-with-icon">
+            <span ><ion-icon name="water-outline"></ion-icon>
+            <ion-icon name="call-outline"></ion-icon>
+            <ion-icon name="wifi-outline"></ion-icon>
+          </span>
+          </p>
+          <p>
+            <button class="choose-room" type="button">Choose Room</button>
+          </p>
+        </div>
+
+        <div class="room-type deluxe-room">
+          <div class="room-image"></div>
+          <p class="room-name">Deluxe Room</p>
+          <p class="room-price">From $199</p>
+          <p>King-size bed</p>
+          <p>40m<sup>2</sup></p>
+          <p class="text-with-icon">
+            <span ><ion-icon name="water-outline"></ion-icon>
+            <ion-icon name="call-outline"></ion-icon>
+            <ion-icon name="wifi-outline"></ion-icon>
+          </span>
+          </p>
+          <p>
+            <button class="choose-room" type="button">Choose Room</button>
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="about">
+      <div class="about-content">
+        <div class="section-heading">About</div>
+        <p>
+          Our hotel is one of a kind. It is truely amazing. Lorem ipsum dolor
+          sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+          incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+          quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+          commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+          velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+          occaecat cupidatat non proident, sunt in culpa qui officia deserunt
+          mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod
+          tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+          veniam.
+        </p>
+        <p class="accepts-payment">We accept:</p>
+      </div>
+
+      <div class="road-map"></div>
+    </section>
+
+    <div class="address-info">
+      <p>423 Some adr, Chicago, US</p>
+      <p>Phone: +00 151515</p>
+      <p>Email: mail@mail.com</p>
+    </div>
+
+    <div class="on-demand-banner">
+      On demand, we can offer playstation, babycall, children care, dog
+      equipment, etc.
+    </div>
+
+    <section id="our-hotels">
+      <div class="section-heading">Our Hotels</div>
+      <p>You can find our hotels anywhere in the world:</p>
+      <div class="cities">
+        <div class="city cinque-terre"></div>
+        <div class="city new-york"></div>
+        <div class="city san-francisco"></div>
+        <div class="city pisa"></div>
+        <div class="city paris"></div>
+      </div>
+      <div class="best-offers">
+        <div>Get the best offers first!</div>
+        <div>Join our newsletter.</div>
+        <div>
+          <label for="email">E-mail</label>
+          <div class="search-criteria">
+            <input name="email" type="email" placeholder="Your Email address" />
+          </div>
+        </div>
+        <div>
+          <button type="button" name="subscribe">Subscribe</button>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <div class="section-heading">Contact</div>
+      <p>If you have any questions, do not hesitate to ask them.</p>
+      <div class="contact-info">
+        <p>Chicago, US</p>
+        <p>Phone: +00 151515</p>
+        <p>Email: mail@mail.com</p>
+      </div>
+      <form id="details-submit-form">
+        <p>
+          <input name="name" type="text" placeholder="Name" />
+        </p>
+        <p>
+          <input name="email" type="email" placeholder="Email" />
+        </p>
+        <p>
+          <input name="message" type="text" placeholder="Message" />
+        </p>
+        <p>
+          <button type="button" name="send-message" data-action="send-message">Send Message</button>
+        </p>
+      </form>
+    </section>
+
+    <footer>
+      <p>Find Us On</p>
+      <p>Social media links</p>
+      <p>
+        Powered by
+        <a href="https://www.google.com" target="_blank">w3.css</a>
+      </p>
+    </footer>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  </body>
+</html>
